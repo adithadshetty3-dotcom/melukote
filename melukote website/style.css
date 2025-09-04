@@ -1,0 +1,233 @@
+
+*{
+    margin: 0;
+    font-family:Arial;
+    border:border-box;
+}
+
+.head {
+    background-color: #000000CC;
+    height:3rem;
+    color:white;
+    display: flex;  /*comes in same vertical line*/
+    align-items: center; /*aligns items vertically in the center*/
+    justify-content: space-evenly; /*spreads the items evenly*/
+    
+     
+}
+
+
+.head-text  {
+    color:white;
+    display:flex;
+    align-items: center; /*aligns items vertically in the center*/
+    justify-content: space-evenly; /*spreads the items evenly*/
+}
+.head-text p {
+    margin-left:1.5rem ;
+}
+/* Tablet */
+@media only screen and (max-width: 768px) {
+    .head-text {
+        font-size: 0.9rem;   /* slightly smaller text */
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 480px) {
+    .head-text {
+        font-size: 0.7rem;   /* smaller text for phones */
+    }
+
+    .head-text p {
+        margin-left: 0.5rem; /* reduce spacing between texts */
+    }
+}
+
+
+.icon {
+    margin-left: 2.8rem;
+    position: relative;
+}
+/* Mobile - only adjust icons */
+@media only screen and (max-width: 480px) {
+    .icon {
+        transform: scale(0.7);   /* shrink icons to 70% */
+        margin-left: 0.5rem;     /* reduce spacing */
+    }
+}
+
+/* Tablet - optional, slightly smaller icons */
+@media only screen and (max-width: 768px) {
+    .icon {
+        transform: scale(0.85);  /* shrink icons to 85% */
+        margin-left: 1rem;
+    }
+}
+
+
+/* 1st img sec */
+
+/* existing */
+.melu {
+    background-image: url("melukote.jpg");
+    background-size: cover;
+    height:43.75rem;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+}
+
+.melu-msg {
+    color:white;
+    font-size:3.5rem;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 4.6rem;
+    margin-left: 1.875rem;
+}
+
+/* Tablet */
+@media only screen and (max-width: 768px) {
+    .melu {
+        height: 30rem; /* smaller height for tablets */
+    }
+
+    .melu-msg {
+        font-size: 2.5rem;  /* reduce font size */
+        margin-top: 2rem;   /* less spacing */
+        margin-left: 1rem;
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 480px) {
+    .melu {
+        height: 20rem; /* even smaller height */
+        justify-content: center; /* center text horizontally */
+        align-items: center;     /* center text vertically */
+    }
+
+    .melu-msg {
+        font-size: 1.5rem;  /* mobile-friendly size */
+        margin: 0;          /* remove extra margins */
+        text-align: center; /* center align text */
+    }
+}
+
+
+/* explore pg */
+
+.border {
+    border: 3px solid transparent;
+}
+.border:hover {
+    border: 1.5px solid rgb(0, 0, 0); /* add border in class for hover */
+}
+
+.explore-title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    color:white;
+    background-color: #acc8c2;
+}
+/* Tablet */
+@media only screen and (max-width: 768px) {
+    .explore-title {
+        font-size: 1.6rem;  /* slightly smaller */
+        padding: 0.5rem;    /* add breathing space */
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 480px) {
+    .explore-title {
+        font-size: 1.2rem;  /* smaller title */
+        padding: 0.4rem;    /* tighter padding */
+    }
+}
+
+.explore {
+    display: flex; /* get box in same vertical line */
+    flex-wrap: wrap; /* allows boxes to wrap to the next line if space is insufficient */
+    justify-content: space-evenly;/* add space btw boxes */
+    background-color: #acc8c2;
+}
+
+/* existing .box code */
+.box {
+    height:34.37rem;
+    width:23%;
+    background-color:white;
+    padding:20px 0px 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* Tablet (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+    .box {
+        width: 45%;   /* two boxes per row */
+        height: auto; /* let height adjust automatically */
+    }
+}
+
+/* Mobile (max-width: 480px) */
+@media only screen and (max-width: 480px) {
+    .box {
+        width: 90%;   /* one box per row */
+        height: auto; /* let height adjust automatically */
+    }
+}
+
+
+.box-img {
+    height:450px;
+    background-size:cover;/* img dosnt repeat*/
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.box-content {
+    margin-left:1rem;
+    margin-right: 1rem;
+}
+
+.box-content p{
+    color:#007185;
+}
+
+/*footer */
+
+footer {
+    margin-top: 15px;
+}
+.foot-panel1 {
+    background-color: #374758;
+    color:white;
+    height:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.foot-panel2  {
+    background-color: #222f3d;
+    color:white;
+    display:flex;/*sents diff columns*/
+    justify-content: space-evenly;
+    
+}
+
+ul {
+    margin-top: 20px;
+}
+
+ul a {
+    display:block;/*sends words in a sentence to new line*/
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color:#dddddd
+
+}
